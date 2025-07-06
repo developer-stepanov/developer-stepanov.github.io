@@ -13,87 +13,87 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <style>
         html {
-          scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
         body {
-          font-family: "Montserrat", sans-serif;
-          background: #fafafa;
-          font-size: 18px;
+            font-family: "Montserrat", sans-serif;
+            background: #fafafa;
+            font-size: 18px;
         }
         /* --- HERO --- */
         .full-height {
-          min-height: 100vh;
-          position: relative;
-          color: #000;
+            min-height: 100vh;
+            position: relative;
+            color: #000;
         }
         .hero-content {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-          width: 100%;
-          max-width: 900px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
         }
         .hero-content h1 {
-          font-weight: 700;
-          letter-spacing: 2px;
-          margin-bottom: 0.5rem;
-          font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            font-size: 3.5rem;
         }
         .hero-content h4 {
-          font-weight: 300;
-          margin-bottom: 2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
         }
         /* the arrow itself */
         .scroll-down {
-          position: absolute;
-          bottom: 20px;           /* tweak to move it closer/farther from bottom */
-          left: 50%;
-          transform: translateX(-50%);
-          font-size: 48px;        /* size of the arrow icon */
-          color: #000;            /* arrow color */
-          opacity: 0.75;
-          animation: scrollDown 2s infinite;
-          cursor: pointer;
+            position: absolute;
+            bottom: 20px;           /* tweak to move it closer/farther from bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;        /* size of the arrow icon */
+            color: #000;            /* arrow color */
+            opacity: 0.75;
+            animation: scrollDown 2s infinite;
+            cursor: pointer;
         }
 
         /* simple fade‐and‐move animation */
         @keyframes scrollDown {
-          0%   { opacity: 0; transform: translate(-50%, -10px); }
-          50%  { opacity: .75; transform: translate(-50%, 0); }
-          100% { opacity: 0; transform: translate(-50%, 10px); }
+            0%   { opacity: 0; transform: translate(-50%, -10px); }
+            50%  { opacity: .75; transform: translate(-50%, 0); }
+            100% { opacity: 0; transform: translate(-50%, 10px); }
         }
         /* --- SECTIONS --- */
         #about {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-          max-width: 1200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 1200px;
         }
         #experience {
-          position: absolute;
-          top: 45%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-          max-width: 1200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 1200px;
         }
         section {
-          padding: 4rem 0 3rem 0;
+            padding: 4rem 0 3rem 0;
         }
         .section-title {
-          font-weight: 600;
-          margin-bottom: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
         }
         /* --- STATS --- */
         .stat-number {
-          font-size: 3rem;
-          font-weight: 700;
-          margin-bottom: 0;
-          color: #009688;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: #009688;
         }
         /* --- EXPERIENCE TIMELINE --- */
         .timeline {
@@ -102,31 +102,39 @@
             border-left: 3px solid #009688;
         }
         .timeline .entry {
-          position: relative;
-          margin-bottom: 2rem;
-          padding-left: 1.8rem; /* <-- extra space between dot and text */
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 1.8rem; /* <-- extra space between dot and text */
         }
         .timeline .entry::before {
-          content: "";
-          position: absolute;
-          left: -9px;
-          top: 5px;
-          width: 15px;
-          height: 15px;
-          background: #009688;
-          border-radius: 50%;
+            content: "";
+            position: absolute;
+            left: -9px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background: #009688;
+            border-radius: 50%;
         }
         /* --- SKILLS --- */
         .chip.large {
-          font-size: 1.1rem;
-          padding: 0 15px;
-          margin: 0.3rem;
+            font-size: 1.1rem;
+            padding: 0 15px;
+            margin: 0.3rem;
         }
         /* --- FOOTER --- */
         footer {
-          background: #263238;
+            background: #263238;
         }
-        footer a { color: #80cbc4; }
+        footer a {
+            color: #80cbc4;
+        }
+
+        @media only screen and (max-width: 600px) {
+            html {
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -219,7 +227,7 @@
                             approval speed by 35%.
                         </p>
                     </div>
-                    <div class="entry" data-aos="fade-left" data-aos-delay="150">
+                    <div class="entry" data-aos="fade-left" data-aos-delay="100">
                         <h6 class="teal-text">Jun&nbsp;2020 – Aug&nbsp;2021</h6>
                         <h5>Java Developer <small>@&nbsp;Innoseti, Kaliningrad</small></h5>
                         <p>
@@ -227,7 +235,7 @@
                             from days to minutes.
                         </p>
                     </div>
-                    <div class="entry" data-aos="fade-left" data-aos-delay="250">
+                    <div class="entry" data-aos="fade-left" data-aos-delay="150">
                         <h6 class="teal-text">2018 – 2020</h6>
                         <h5>PHP&nbsp;→&nbsp;Java Developer <small>@&nbsp;Torch Entertainment, Prague</small></h5>
                         <p>Transitioned legacy PHP stack to modern Java microservices.</p>
