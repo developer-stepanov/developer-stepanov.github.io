@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxim Stepanov – Java Developer</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+        body {
+          font-family: "Montserrat", sans-serif;
+          background: #fafafa;
+          font-size: 18px;
+        }
+        /* --- HERO --- */
+        .full-height {
+          min-height: 100vh;
+          position: relative;
+          color: #000;
+        }
+        .hero-content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          width: 100%;
+          max-width: 900px;
+        }
+        .hero-content h1 {
+          font-weight: 700;
+          letter-spacing: 2px;
+          margin-bottom: 0.5rem;
+          font-size: 3.5rem;
+        }
+        .hero-content h4 {
+          font-weight: 300;
+          margin-bottom: 2rem;
+        }
+        /* the arrow itself */
+        .scroll-down {
+          position: absolute;
+          bottom: 20px;           /* tweak to move it closer/farther from bottom */
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 48px;        /* size of the arrow icon */
+          color: #000;            /* arrow color */
+          opacity: 0.75;
+          animation: scrollDown 2s infinite;
+          cursor: pointer;
+        }
+
+        /* simple fade‐and‐move animation */
+        @keyframes scrollDown {
+          0%   { opacity: 0; transform: translate(-50%, -10px); }
+          50%  { opacity: .75; transform: translate(-50%, 0); }
+          100% { opacity: 0; transform: translate(-50%, 10px); }
+        }
+        /* --- SECTIONS --- */
+        #about {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          max-width: 1200px;
+        }
+        #experience {
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          max-width: 1200px;
+        }
+        section {
+          padding: 4rem 0 3rem 0;
+        }
+        .section-title {
+          font-weight: 600;
+          margin-bottom: 2rem;
+        }
+        /* --- STATS --- */
+        .stat-number {
+          font-size: 3rem;
+          font-weight: 700;
+          margin-bottom: 0;
+          color: #009688;
+        }
+        /* --- EXPERIENCE TIMELINE --- */
+        .timeline {
+            position: relative;
+            padding-left: 2rem; /* space for the vertical line and dot */
+            border-left: 3px solid #009688;
+        }
+        .timeline .entry {
+          position: relative;
+          margin-bottom: 2rem;
+          padding-left: 1.8rem; /* <-- extra space between dot and text */
+        }
+        .timeline .entry::before {
+          content: "";
+          position: absolute;
+          left: -9px;
+          top: 5px;
+          width: 15px;
+          height: 15px;
+          background: #009688;
+          border-radius: 50%;
+        }
+        /* --- SKILLS --- */
+        .chip.large {
+          font-size: 1.1rem;
+          padding: 0 15px;
+          margin: 0.3rem;
+        }
+        /* --- FOOTER --- */
+        footer {
+          background: #263238;
+        }
+        footer a { color: #80cbc4; }
+    </style>
+</head>
+<body>
+<!-- HERO SECTION -->
+<div class="full-height grey lighten-2">
+    <div class="hero-content">
+        <h1>MAXIM STEPANOV</h1>
+        <h4>Crafting Scalable Java Solutions<br />with Passion & Precision</h4>
+        <a target="_blank" rel="noopener noreferrer" href="./download/CV_MStepanov.pdf" class="btn-large waves-effect waves-light teal darken-2">Download resume</a>
+    </div>
+
+    <a href="#about-section" class="scroll-down">
+        <i class="material-icons">keyboard_arrow_down</i>
+    </a>
+</div>
+
+<!-- ABOUT SECTION -->
+<div id="about-section" class="full-height">
+    <div class="full white">
+        <section id="about">
+            <div class="container">
+                <h4 class="section-title center-align" data-aos="fade-up">About Me</h4>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    I am a professional Java developer with 5 years of commercial experience.
+                    I am skilled to deliver good designed, well tested and fully functioned code.
+                    I have deep understanding of Java ecosystem and related tech stack such as Spring Boot, SQL/NoSQL dbs, Kafka, Docker and many more.
+                </p>
+
+                <p data-aos="fade-up" data-aos-delay="200">
+                    I follow test-driven development on a daily basis.
+                    I have an experience with mentoring, code-reviewing other team members.
+                    I have strong ability to work independently and as part of a team.
+                    I am most comfortable and prefer to work in agile team.
+                </p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- STATS SECTION -->
+<section id="stats" class="grey lighten-4">
+    <div class="container">
+        <h4 class="section-title center-align" data-aos="fade-up">Career Highlights</h4>
+        <div class="row center-align">
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="50">
+                <p class="stat-number">6 yrs</p>
+                <p>Java Mastery</p>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="150">
+                <p class="stat-number">3 yrs</p>
+                <p>Microservices Architecture</p>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="150">
+                <p class="stat-number">85% Avg</p>
+                <p>Test coverage -> Clean Code/TDD</p>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="250">
+                <p class="stat-number">15 dashboards & 30 Slack alerts</p>
+                <p>Grafana Monitoring</p>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="350">
+                <p class="stat-number">150+</p>
+                <p>Agile Sessions Facilitated</p>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="450">
+                <p class="stat-number">8 nationalities</p>
+                <p>Multicultural Teams</p>
+            </div>
+            <div class="col s12 m4" data-aos="fade-up" data-aos-delay="550">
+                <p class="stat-number">10 h</p>
+                <p>Internal Workshops & Mentorship Materials Created</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<div class="full-height">
+    <div class="full white">
+        <section id="experience">
+            <div class="container">
+                <h4 class="section-title center-align" data-aos="fade-up">Experience</h4>
+                <div class="timeline">
+                    <div class="entry" data-aos="fade-left" data-aos-delay="50">
+                        <h6 class="teal-text">Aug&nbsp;2021 – Present</h6>
+                        <h5>Java Developer <small>@&nbsp;4Finance, Prague</small></h5>
+                        <p>
+                            Refactored mission‑critical lending platform, migrated 15+ services to
+                            Kubernetes, and delivered new credit‑scoring algorithms that boosted
+                            approval speed by 35%.
+                        </p>
+                    </div>
+                    <div class="entry" data-aos="fade-left" data-aos-delay="150">
+                        <h6 class="teal-text">Jun&nbsp;2020 – Aug&nbsp;2021</h6>
+                        <h5>Java Developer <small>@&nbsp;Innoseti, Kaliningrad</small></h5>
+                        <p>
+                            Engineered blockchain‑based payment services and reduced settlement time
+                            from days to minutes.
+                        </p>
+                    </div>
+                    <div class="entry" data-aos="fade-left" data-aos-delay="250">
+                        <h6 class="teal-text">2018 – 2020</h6>
+                        <h5>PHP&nbsp;→&nbsp;Java Developer <small>@&nbsp;Torch Entertainment, Prague</small></h5>
+                        <p>Transitioned legacy PHP stack to modern Java microservices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="grey lighten-4">
+    <div class="container">
+        <h4 class="section-title center-align" data-aos="fade-up">Core&nbsp;Tech Stack</h4>
+        <div class="center-align" data-aos="fade-up" data-aos-delay="100">
+            <div class="chip large teal white-text">Java&nbsp;11/17</div>
+            <div class="chip large">Spring&nbsp;Boot</div>
+            <div class="chip large">Kafka</div>
+            <div class="chip large">Docker</div>
+            <div class="chip large">Kubernetes</div>
+            <div class="chip large">SQL / NoSQL</div>
+            <div class="chip large">CI/CD</div>
+            <div class="chip large">TDD</div>
+            <div class="chip large">Angular&nbsp;14</div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+<section id="portfolio" class="white">
+    <div class="container">
+        <h4 class="section-title center-align" data-aos="fade-up">Portfolio</h4>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- GitHub Card -->
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-content center">
+                        <i class="material-icons medium teal-text">code</i>
+                        <span class="card-title">GitHub</span>
+                        <p>Browse my public repository: shop-platform</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="https://github.com/developer-stepanov/shop-platform" target="_blank" rel="noopener noreferrer" class="teal-text text-darken-2">Visit GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Demo Card -->
+            <div class="col s12 m6">
+                <div class="card hoverable">
+                    <div class="card-content center">
+                        <i class="material-icons medium teal-text">launch</i>
+                        <span class="card-title">Live Demo</span>
+                        <p>Check out a running demo: shop-platform</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="https://your-demo-site.com" target="_blank" rel="noopener noreferrer" class="teal-text text-darken-2">View Demo →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT CTA SECTION -->
+<section id="contact" class="white">
+    <div class="container center-align" data-aos="zoom-in">
+        <h4 class="section-title">Let’s Build Something&nbsp;Great</h4>
+        <p class="flow-text">
+            Drop me a line and see how I can accelerate your next project.
+        </p>
+        <a href="mailto:developer.stepanov@gmail.com" class="btn-large waves-effect waves-light teal darken-2">
+            <i class="material-icons left">mail</i> Contact&nbsp;Me
+        </a>
+        <a href="https://linkedin.com/in/developer-stepanov/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-large waves-effect waves-light blue darken-2"
+           style="margin-left: 1rem;">
+            <i class="material-icons left">business</i> LinkedIn
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+    <div class="container">
+        <div class="col s12 center-align">
+            © <span id="year"></span> Made by Maxim&nbsp;Stepanov • with&nbsp;❤️
+        </div>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({ once: true });
+      // dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+</script>
+</body>
+</html>
